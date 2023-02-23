@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px 20px
+}
+ img {
+  object-fit: cover;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+}
+
+img:hover{
+    transform: scale(1.1);
+    transition: transform .5s;     
+}
