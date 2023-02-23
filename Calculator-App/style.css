@@ -1,0 +1,39 @@
+body {
+  font-family: "Hind", sans-serif;
+  background-color: rgb(1, 22, 39);
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.calculator {
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+input {
+  text-align: right;
+}
+
+button {
+  width: 70px;
+  height: 60px;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+}
+
+.top > input {
+  flex: 1;
+  height: 50px;
+  padding-right: 8px;
+}
