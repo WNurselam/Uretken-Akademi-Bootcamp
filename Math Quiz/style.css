@@ -1,0 +1,82 @@
+body {
+  background-color: #090524;
+  color: white;
+  font-family: "Itim", cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+}
+
+#operator {
+  font-size: 25px;
+}
+
+input {
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  background-color: #d1d1d1;
+  border-radius: 5px;
+  outline: none;
+}
+
+.container {
+  height: 550px;
+  margin: 50px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(226, 142, 142, 0.12) 0px -12px 30px,
+    rgba(226, 217, 217, 0.12) 0px 4px 6px,
+    rgba(180, 171, 171, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.buttons > button {
+  padding: 15px;
+  margin-top: 6px;
+  border-radius: 5px;
+  transition: all 0.7s ease-in-out;
+  box-shadow: 2px 2px 3px gray;
+  font-family: "Itim", cursive;
+  font-size: 19px;
+}
+
+button:hover {
+  background-color: #5a0052;
+  color: white;
+  cursor: pointer;
+  transform: translateX(-3px);
+}
+
+span {
+  text-align: center;
+  font-size: 40px;
+}
+
+span#operator {
+  font-size: 40px;
+}
+
+.spanText {
+  text-align: center;
+}
+
+.startBtn {
+  background-color: green;
+}
+
+.checkBtn{
+  background-color: yellow;
+}
+
+.resetBtn{
+  background-color: red;
+  
+}

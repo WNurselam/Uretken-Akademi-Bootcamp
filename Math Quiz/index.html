@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Math Game</h1>
+            <div>
+                <input type="number" id="value1" />
+            </div>
+            <div class="spanText">
+                <span id="operator">+</span>
+            </div>
+            <div>
+                <input type="number" id="value2" />
+            </div>
+            <div class="spanText">
+                <span> =</span>
+            </div>
+            <div>
+                <input type="number" id="result" />
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="startBtn" onclick="playGame()" type="button">Start Game</button>
+            <button class="checkBtn" id="checkBtn" type="button">Check Game</button>
+            <button class="resetBtn" onclick="resetGame()" type="button">Reset Game</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
