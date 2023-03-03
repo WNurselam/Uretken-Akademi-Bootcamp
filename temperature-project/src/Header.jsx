@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div>3 Birimde Sicaklik Durumu</div>
+    <h1 className='m-5'>3 Birimde Sicaklik Durumu</h1>
   )
 }
 

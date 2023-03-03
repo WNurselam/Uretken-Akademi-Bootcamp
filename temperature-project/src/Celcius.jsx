@@ -1,12 +1,19 @@
 import React, { useState } from "react";
-import { Col, Row } from "reactstrap";
+import { Col } from "reactstrap";
 
 const Celcius = ({ temperature }) => {
-  const [celcTemp, setCelcTemp] = useState(20);
+  const [celcTemp, setCelcTemp] = useState(0);
+  
+  
+
   return (
-    <div>
-      <Col>Celcius-{celcTemp + temperature} °C </Col>
-    </div>
+    <Col className="m-3 border p-5 shadow">
+      <p>Celcius-{celcTemp + temperature} °C </p>
+
+        {
+          celcTemp + temperature <25 ? <span>Soğuk</span>:"Sıcak "
+        }
+    </Col>
   );
 };
 

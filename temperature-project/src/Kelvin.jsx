@@ -1,13 +1,16 @@
 import React, { useState } from "react";
-import { Row } from "reactstrap";
+import { Col, Row } from "reactstrap";
 
 const Kelvin = ({ temperature }) => {
-  const [kelvinTemp, setKelvinTemp] = useState(273.12);
+  const [kelvinTemp, setKelvinTemp] = useState(273.15);
+
   return (
-    <div>
-      <Row>Kelvin - {kelvinTemp + temperature} °C</Row>
-    </div>
+    <Col className="m-3  border p-5 shadow">
+      <p>Kelvin - {kelvinTemp + temperature} °C</p>
+      {kelvinTemp + temperature < 290 ? <span>Aşırı Sıcak</span> : "Çöl Sıcaklığı "}
+    </Col>
   );
 };
 
 export default Kelvin;
+

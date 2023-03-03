@@ -1,14 +1,15 @@
-import React, { useState } from 'react'
-import { Row } from 'reactstrap'
+import React, { useState } from "react";
+import { Col } from "reactstrap";
 
-const Fahrenheit = ({temperature}) => {
-
-  const [fahrenTemp,setFahrenTemp] = useState(32)
+const Fahrenheit = ({ temperature }) => {
+  const [fahrenTemp, setFahrenTemp] = useState(32);
   return (
-    <div> 
-        <Row>Fahrenheit - {fahrenTemp+temperature} °C</Row>
-    </div>
-  )
-}
+    <Col className="m-3  border p-5 shadow">
+      <p> Fahrenheit - {fahrenTemp + temperature} °C</p>
 
-export default Fahrenheit
+      {fahrenTemp + temperature > 35 ? <span>Çok Sıcak</span> : "Sıcak "}
+    </Col>
+  );
+};
+
+export default Fahrenheit;
