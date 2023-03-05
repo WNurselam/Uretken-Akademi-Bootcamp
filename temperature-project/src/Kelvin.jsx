@@ -6,8 +6,8 @@ const Kelvin = ({ temperature }) => {
 
   return (
     <Col className="m-3  border p-5 shadow">
-      <p>Kelvin - {kelvinTemp + temperature} °C</p>
-      {kelvinTemp + temperature < 290 ? <span>Aşırı Sıcak</span> : "Çöl Sıcaklığı "}
+      <p>Kelvin {Math.floor(kelvinTemp + temperature)} °C</p>
+      {kelvinTemp + temperature > 30 ? <span>Sıcak</span> : "Soğuk "}
     </Col>
   );
 };

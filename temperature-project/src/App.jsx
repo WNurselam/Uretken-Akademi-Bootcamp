@@ -13,12 +13,18 @@ function App() {
   const increacseTemp = () => {
     setTemperature((temperature) => temperature + 1);
   };
+  const decreaseTemp = () => {
+    setTemperature((temperature) => temperature - 1);
+  };
   return (
     <div className="App">
       <h1>Hava Nasil </h1>
       <p>Şuan sıcaklık {temperature} °C</p>
-      <Button size="lg" onClick={increacseTemp}>
+      <Button className="m-2" size="lg" onClick={increacseTemp}>
         Sıcaklık Artır
+      </Button  >
+      <Button size="lg" className="bg-primary" onClick={decreaseTemp}>
+        Sıcaklık Azalt
       </Button>
       <Header />
       <Row className="border border-light shadow-lg p-5">

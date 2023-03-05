@@ -8,10 +8,10 @@ const Celcius = ({ temperature }) => {
 
   return (
     <Col className="m-3 border p-5 shadow">
-      <p>Celcius-{celcTemp + temperature} °C </p>
+      <p>Celcius {celcTemp + temperature} °C </p>
 
         {
-          celcTemp + temperature <25 ? <span>Soğuk</span>:"Sıcak "
+          celcTemp + temperature < 25 ? <span>Soğuk</span>:"Sıcak "
         }
     </Col>
   );
