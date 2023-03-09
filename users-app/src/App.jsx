@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import Users from "./Users";
+import Header from "./Header";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -16,7 +17,7 @@ function App() {
         setUsers(response.data);
         setLoading(false);
       } catch (error) {
-        console.log("Users not foun", users);
+        console.log("Users not found", users);
       }
     };
     fetchApi();
@@ -27,10 +28,13 @@ function App() {
   }
 
   return (
-    <div className="d-flex flex-column justify-content-center align-items-center">
-      {users.map((user) => (
-        <Users user={user} key={user.id} />
-      ))}
+    <div>
+      <Header />
+      <div className="d-flex flex-row flex-wrap justify-content-around align-items-center">
+        {users.map((user) => (
+          <Users user={user} key={user.id} />
+        ))}
+      </div>
     </div>
   );
 }
