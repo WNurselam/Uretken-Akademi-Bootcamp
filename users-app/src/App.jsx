@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   if (loading) {
-    return <h3>Loading...</h3>;
+    return <h2 className="text-white-50 m-5">Loading...</h2>;
   }
 
   return (

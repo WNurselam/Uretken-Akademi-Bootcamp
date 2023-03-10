@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardBody, CardSubtitle, CardText, CardTitle } from "reactstrap";
+import { Card, CardBody, CardSubtitle, CardTitle } from "reactstrap";
 import { Envelope, Phone } from "@phosphor-icons/react";
 
 const Users = ({ user }) => {
@@ -15,15 +15,19 @@ const Users = ({ user }) => {
         }}
       >
         <CardTitle tag="h5">{user.username}</CardTitle>
-        <CardSubtitle>{user.name}</CardSubtitle>
+        <CardSubtitle className="border-bottom pb-2 border-primary">
+          {user.name}
+        </CardSubtitle>
         <CardBody>
-          <div>
-            <Phone size={36} color="#AE2983" />
-            <span className="m-lg-2">{user.phone}</span>
-          </div>
-          <div>
-            <Envelope size={36} color="#AE2983" />
-            <span className="m-lg-2">{user.email}</span>
+          <div className="d-flex  align-items-start  flex-column">
+            <div>
+              <Phone className="hover" size={36} color="#AE2983" />
+              <span className="m-lg-2">{user.phone}</span>
+            </div>
+            <div>
+              <Envelope size={36} color="#AE2983" />
+              <span className="m-lg-2">{user.email}</span>
+            </div>
           </div>
         </CardBody>
       </Card>
