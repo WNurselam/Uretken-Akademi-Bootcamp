@@ -17,7 +17,7 @@ function App() {
         setUsers(response.data);
         setLoading(false);
       } catch (error) {
-        console.log("Users not found", users);
+        console.log("Users not found", error);
       }
     };
     fetchApi();
